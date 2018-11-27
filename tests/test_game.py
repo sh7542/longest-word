@@ -13,8 +13,8 @@ class TestGame(unittest.TestCase):
 
     def test_is_valid_word(self):
         new_game = Game()
-        new_game.grid = list('ABCDBFGHI')
-        self.assertIs(new_game.is_valid('FGHIA'), True)
+        new_game.grid = list('ABLOBFGHP')
+        self.assertIs(new_game.is_valid('GLOP'), True)
 
     def test_is_invalid_word(self):
         new_game = Game()
